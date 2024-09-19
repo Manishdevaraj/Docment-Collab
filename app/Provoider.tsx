@@ -20,7 +20,7 @@ const Provoider = ({children}:{children:ReactNode}) => {
      resolveMentionSuggestions={async ({ text, roomId }) => {
       const roomUsers = await getDocumentUsers({
         roomId,
-        currentUser: clerkuser?.emailAddresses[0].emailAddress!,
+        currentUser: clerkuser?.emailAddresses[0]?.emailAddress ?? "defaultEmail@example.com",
         text,
       })
 
