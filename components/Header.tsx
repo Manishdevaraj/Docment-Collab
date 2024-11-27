@@ -8,18 +8,18 @@ function Header({children,className}:HeaderProps) {
     <div className={cn("header",className)}>
         <Link href="/" className="md:flex-1">
         <Image
-        src="/assets/icons/logo.svg"
+        src="/logo.jpg"
         alt="Logo"
         width={120}
         height={32}
-        className="hidden md:block"
+        className="hidden md:block rounded-full size-12"
         />
         <Image
-        src="/assets/icons/logo.svg"
+        src="/logo.jpg"
         alt="Logo"
         width={32}
         height={32}
-        className="block mr-2 md:hidden"
+        className="block mr-2 rounded-full size-12 md:hidden"
         />
         
         </Link>

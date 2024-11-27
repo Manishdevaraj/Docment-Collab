@@ -4,6 +4,7 @@ import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import Provoider from "./Provoider";
+import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,6 +41,7 @@ export default function RootLayout({
     }
     >  
     <html lang="en">
+    
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

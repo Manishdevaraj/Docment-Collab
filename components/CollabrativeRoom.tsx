@@ -116,7 +116,9 @@ const CollabrativeRoom = ({roomId,roomMetadata,users,currentUserType}:Collaborat
             </div>
         </Header>
         
-        <Editor roomId={roomId} currentUserType={currentUserType}/>
+        <Editor 
+        roomId={roomId} 
+        currentUserType={currentUserType}/>
 
     </div>
     </ClientSideSuspense>
